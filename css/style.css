@@ -1,0 +1,63 @@
+
+body {
+    background-color: #d6d098;
+}
+body header {
+    
+   float: left ;
+    
+}
+body header h1 {
+    text-align: center;
+    text-shadow: #837e51;
+    color: #682b1d;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
+body header h2{
+    text-align: center;
+    text-shadow: #837e51;
+    color: #682b1d;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+body header h3{
+    text-align: center;
+    text-shadow: #837e51;
+    color: #682b1d;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+body header img {
+    width: 20%;
+    height: 0%;
+    padding-top: 0%;
+    
+}
+body header nav ul li{
+    display: inline-block;
+    margin-right: 20%;
+    margin-bottom: 10%;
+}
+
+body header nav ul li a {
+text-decoration: none;
+color: #682b1d;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-weight: bolder;
+
+}
+body main section {
+    width: 100%;
+    float: left;
+    text-shadow: #837e51;
+    color: #682b1d;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-bottom: 20%;
+    
+}
+body main p {
+        
+        color: #682b1d;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        padding-bottom:  10%;
+}
