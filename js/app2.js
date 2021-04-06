@@ -64,4 +64,7 @@ let userFirstQ = prompt('First Question, Did Haya worked as innovation professio
          default:
              alert('we appreciate your feedback , if you want please contact us to see what we can do to improve the game');
  }
- 
+
+ let userName= prompt('would you please remind me with your name ? ');
+ console.log(userName);
+  alert("Thank you for visiting my website "+userName);
