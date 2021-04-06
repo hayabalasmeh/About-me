@@ -61,3 +61,8 @@ body main p {
         font-family:Verdana, Geneva, Tahoma, sans-serif;
         padding-bottom:  10%;
 }
+body footer li {
+    color: #682b1d;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+margin: 50px;
+}
