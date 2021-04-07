@@ -9,7 +9,7 @@ function q1(){
     userFirstQ = prompt('Did Haya worked at King Hussein Cancer Center ?yes,no');
     userFirstQ = userFirstQ.toLowerCase();
 
-    // console.log('You answered with ' +userConfirm); //console.log('You answered with ' +userConfirm);
+    //console.log('You answered with ' +userConfirm);
     switch(userFirstQ){
         case 'yes':
         case "y":
@@ -29,23 +29,34 @@ function q1(){
 // Q1 calling:
 q1();
 
-let userSecQ = prompt(' Did Haya worked as innovation professional in 2017? yes/no');
- userSecQ = userSecQ.toLowerCase();
- //alert('You answered with ' +userFirstQ);//console.log('You answered with ' +userFirstQ);
 
- switch(userSecQ){
+// Q2 declaring:
+
+let userSecQ = null;
+
+function q2(){
+    userSecQ = prompt(' Did Haya worked as innovation professional in 2017? yes/no');
+    userSecQ = userSecQ.toLowerCase();
+    //console.log('You answered with ' +userFirstQ);
+
+    switch(userSecQ){
     case 'no':
     case 'n':
-             alert('Great Job.You answered correctly');
-             score++;
-    break;
+        alert('Great Job.You answered correctly');
+        score++;
+        break;
     case 'yes':
     case 'y':
-            alert("Sorry. Your answer is wrong, try again later.");
-    break;
+        alert("Sorry. Your answer is wrong, try again later.");
+        break;
     default:
-          alert('Can you please stick to the yes/no answer!')
- }
+        alert('Can you please stick to the yes/no answer!');
+        break;
+    }
+}
+
+// Q2 calling:
+q2();
 
       
   
