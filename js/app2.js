@@ -58,23 +58,31 @@ function q2(){
 // Q2 calling:
 q2();
 
-      
-  
-  let userThirdQ= prompt('Does Haya Have a master degree in Business Administration?yes/no');
+// Q3 declaring:
+let userThirdQ = null;
+
+function q3(){  
+    userThirdQ = prompt('Does Haya Have a master degree in Business Administration?yes/no');
     userThirdQ = userThirdQ.toLowerCase();
+
     switch(userThirdQ){
         case 'no':
         case 'n':
-                alert('Bravo! you answered correctly');
-                score++;
-        break;
+            alert('Bravo! you answered correctly');
+            score++;
+            break;
         case 'yes':
         case 'y':
-        alert('Sorry this is not correct. I wish I had one XD');
-        break;
+            alert('Sorry this is not correct. I wish I had one XD');
+            break;
         default:
-                    alert('Try again later!');
+            alert('Try again later!');
+            break;
     }
+}
+
+// Q3 calling:
+q3();
 
  let userFourthQ = prompt('Are Haya still working with Dream&Idea consultation firm? yes/no');
     userFourthQ = userFourthQ.toLowerCase();
