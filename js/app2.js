@@ -169,42 +169,39 @@ function q6(){
 q6();
 
         
-// Q7: 
-    let countriesNames = ['qatar','dubai','canada','france','poland','united states'];
-    
-    let countNum = prompt('can you guess the name of one the Countries?');
+// Q7 declaring:
+let countriesNames;
+let countNum;
+let trial = 1;
+
+function q7(){
+    countriesNames = ['qatar','dubai','canada','france','poland','united states'];
+    countNum = prompt('can you guess the name of one the Countries?');
     countNum = countNum.toLowerCase();
-     //console.log(countNum);
-     //console.log(countriesNames);
-     //console.log(countNum);
-     //console.log(countriesNames.indexOf(countNum));
-    let trial = 1;
+        //console.log(countNum);
+        //console.log(countriesNames);
+        //console.log(countNum);
+        //console.log(countriesNames.indexOf(countNum));
     
-    while (trial <= 6) {
-       
-         if (countriesNames.indexOf(countNum) >= 0){
-             alert('Bravo! I have visited it and it was such a lovely country');
-             trial=7;
-             score++;
-            }
-             else{ 
-                 countNum = prompt('No, I have not visited this country. Try again!');
-                countNum = countNum.toLowerCase();
-             }
-             countNum = countNum.toLowerCase(); 
-         console.log(countNum);
+    while (trial <= 5){
+        if(countriesNames.indexOf(countNum) >= 0){
+            alert('Bravo! I have visited it and it was such a lovely country');
+            score++;
+            trial=7;
+        }else{ 
+            countNum = prompt('No, I have not visited this country. Try again!');
+            countNum = countNum.toLowerCase();
+        }
+        countNum = countNum.toLowerCase(); 
+        // console.log(countNum);
         trial++;
     }
-    
     alert('Actually I have visited the following countries '+ countriesNames);
-   
- //alert('You answered with ' +userContinue);   //console.log('You answered with ' +userContinue);
- 
- 
+}
 
- 
-  //console.log('You answered with '+userSecQ);
-
+// Q7 calling:
+q7();
+    
 
 
 
