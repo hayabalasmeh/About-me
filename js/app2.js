@@ -135,37 +135,41 @@ function q5(){
 // Q5 calling:
 q5();
 
-    
-    let userNum= prompt("So, let's make the game more funny, could you guess the number of countries I have visited in my whole life? ");
+// Q6 declaring: 
+let userNum = null;
+let i = 1;
+function q6(){
+    userNum = prompt("So, let's make the game more funny, could you guess the number of countries I have visited in my whole life? ");
+    userNum = parseInt(userNum);
+
+    // console.log(userNum);
+    while (i <= 3) {
+        if (userNum > 12) {
+            userNum= prompt('Wow that is a high number of places, can you try again, please!');
+            userNum = parseInt(userNum);
+        }else if (userNum < 12 ) {
+            userNum= prompt('Actually I have visited higher number of places, try again!');
+            userNum = parseInt(userNum);
+        }else if (userNum === 12){
+            alert('Bravo! that is correct !');
+            userNum = parseInt(userNum);
+            score++;
+            i= 4;
+            }
+        i++;
+    }
+    if(userNum !== 12){
+        alert ('Sorry, Your attempts have faild. Actually I have visited 12 countries so far !');
+    }else{ 
+        alert('Good Job !');
+    }
+}
+
+// Q6 calling:
+q6();
+
         
-        console.log(userNum);
-    let i = 1;
-     while (i <= 3) {
-        
-         if (userNum > 12) {
-             userNum= prompt('Wow that is a high number of places, can you try again, please!');
-             userNum = parseInt(userNum);
-         } else if (userNum < 12 ) {
-             userNum= prompt('Actually I have visited higher number of places, try again!');
-             userNum = parseInt(userNum);
-         } 
-             
-          else if (userNum === 12) {
-             alert('Bravo! that is correct !');
-             userNum = parseInt(userNum);
-             score++;
-             i= 4;
-               }
-         i++
-        }
-
-
-       if(userNum !==12){
-           alert ('Sorry, Your attempts have faild. Actually I have visited 12 countries so far !');
-        } else { alert('Good Job !');}
-
-        
-
+// Q7: 
     let countriesNames = ['qatar','dubai','canada','france','poland','united states'];
     
     let countNum = prompt('can you guess the name of one the Countries?');
