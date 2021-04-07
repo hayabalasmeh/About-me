@@ -202,26 +202,32 @@ function q7(){
 // Q7 calling:
 q7();
     
+// last message Declare:
+let userStory;
+let userName;
+function feedBack(){
+    userStory= prompt('Did you enjoy the game?yes/no');
+    userStory = userStory.toLowerCase();
+    //alert('You answered with '+userStory); //console.log('You answered with '+userStory);
 
+    switch(userStory){
+        case'yes':
+        case 'y':
+            alert('I am glad to hear that, thank you for your feedback');
+            break;
+        case'no':
+        case 'n':
+            alert('we appreciate your feedback , if you want please contact us to see what we can do to improve the game');
+            break;
+        default:
+            alert('Thank you !');
+    }
 
+    alert('You score is ' + score + ' out of 7');
+    userName = prompt('would you please remind me with your name?');
+    // console.log(userName);
+    alert("Thank you for visiting my website "+userName);
+}
 
- let userStory= prompt('Did you enjoy the game?yes/no');
- userStory = userStory.toLowerCase();
- //alert('You answered with '+userStory); //console.log('You answered with '+userStory);
-
- switch(userStory){
-     case'yes':
-     case 'y':
-         alert('I am glad to hear that, thank you for your feedback');
-    break;
-    case'no':
-    case 'n':
-        alert('we appreciate your feedback , if you want please contact us to see what we can do to improve the game');
-    break;
-    default:
-             alert('Thank you !');
- }
- alert('You score is out of 7: '+ score);
- let userName= prompt('would you please remind me with your name ? ');
- console.log(userName);
-  alert("Thank you for visiting my website "+userName);
+// last message calling:
+feedBack();
