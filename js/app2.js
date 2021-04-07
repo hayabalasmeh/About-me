@@ -1,7 +1,6 @@
 'use strict';
 
 // Q1 declaring:
-
 let userFirstQ = null;
 let score=0;
 
@@ -31,7 +30,6 @@ q1();
 
 
 // Q2 declaring:
-
 let userSecQ = null;
 
 function q2(){
@@ -84,12 +82,17 @@ function q3(){
 // Q3 calling:
 q3();
 
- let userFourthQ = prompt('Are Haya still working with Dream&Idea consultation firm? yes/no');
+// Q4 declaring:
+let userFourthQ = null;
+
+function q4(){
+    userFourthQ = prompt('Are Haya still working with Dream&Idea consultation firm? yes/no');
     userFourthQ = userFourthQ.toLowerCase();
+
     switch (userFourthQ) {
         case 'yes':
         case 'y':
-        alert('Actually that is not correct !');   
+            alert('Actually that is not correct !');   
             break;
         case 'no':
         case 'n':
@@ -98,8 +101,12 @@ q3();
             break;
         default:
             alert('Can you answer using only yes/no answer, please!');
-            
+            break;   
     }
+}
+
+// Q4 calling:
+q4();
     
     let userFifthQ = prompt('Did Haya Work outside Jordan ?');
     userFifthQ= userFifthQ.toLowerCase();
