@@ -107,10 +107,16 @@ function q4(){
 
 // Q4 calling:
 q4();
-    
-    let userFifthQ = prompt('Did Haya Work outside Jordan ?');
+
+
+// Q5 declaring:
+
+let userFifthQ = null;
+function q5(){
+    userFifthQ = prompt('Did Haya Work outside Jordan ?');
     userFifthQ= userFifthQ.toLowerCase();
-    switch (userFifthQ) {
+
+    switch (userFifthQ){
         case 'yes':
         case 'y':
             alert('That is correct I have worked in UAE for 3 months.');
@@ -122,7 +128,12 @@ q4();
             break;
         default:
             alert('Can you try again later with y/n answer !');
+            break;
     }
+}
+
+// Q5 calling:
+q5();
 
     
     let userNum= prompt("So, let's make the game more funny, could you guess the number of countries I have visited in my whole life? ");
