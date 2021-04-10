@@ -8,7 +8,7 @@ function q1(){
     userFirstQ = prompt('Did Haya worked at King Hussein Cancer Center ?yes,no');
     userFirstQ = userFirstQ.toLowerCase();
 
-    //console.log('You answered with ' +userConfirm);
+    
     switch(userFirstQ){
         case 'yes':
         case "y":
@@ -35,7 +35,7 @@ let userSecQ = null;
 function q2(){
     userSecQ = prompt(' Did Haya worked as innovation professional in 2017? yes/no');
     userSecQ = userSecQ.toLowerCase();
-    //console.log('You answered with ' +userFirstQ);
+    
 
     switch(userSecQ){
     case 'no':
@@ -142,7 +142,7 @@ function q6(){
     userNum = prompt("So, let's make the game more funny, could you guess the number of countries I have visited in my whole life? ");
     userNum = parseInt(userNum);
 
-    // console.log(userNum);
+    
     while (i <= 3) {
         if (userNum > 12) {
             userNum= prompt('Wow that is a high number of places, can you try again, please!');
@@ -178,10 +178,7 @@ function q7(){
     countriesNames = ['qatar','dubai','canada','france','poland','united states'];
     countNum = prompt('can you guess the name of one the Countries?');
     countNum = countNum.toLowerCase();
-        //console.log(countNum);
-        //console.log(countriesNames);
-        //console.log(countNum);
-        //console.log(countriesNames.indexOf(countNum));
+      
     
     while (trial <= 5){
         if(countriesNames.indexOf(countNum) >= 0){
@@ -193,7 +190,7 @@ function q7(){
             countNum = countNum.toLowerCase();
         }
         countNum = countNum.toLowerCase(); 
-        // console.log(countNum);
+        
         trial++;
     }
     alert('Actually I have visited the following countries '+ countriesNames);
@@ -208,7 +205,7 @@ let userName;
 function feedBack(){
     userStory= prompt('Did you enjoy the game?yes/no');
     userStory = userStory.toLowerCase();
-    //alert('You answered with '+userStory); //console.log('You answered with '+userStory);
+    
 
     switch(userStory){
         case'yes':
@@ -225,7 +222,7 @@ function feedBack(){
 
     alert('You score is ' + score + ' out of 7');
     userName = prompt('would you please remind me with your name?');
-    // console.log(userName);
+    
     alert("Thank you for visiting my website "+userName);
 }
 
